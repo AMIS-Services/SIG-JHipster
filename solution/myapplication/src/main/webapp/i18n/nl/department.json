@@ -1,0 +1,24 @@
+
+{
+    "myapplicationApp": {
+        "department" : {
+            "home": {
+                "title": "Departments",
+                "createLabel": "Maak een nieuwe Department",
+                "createOrEditLabel": "Maak of wijzig een Department"
+            },
+            "created": "A new Department is created with identifier {{ param }}",
+            "updated": "A Department is updated with identifier {{ param }}",
+            "deleted": "A Department is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Department {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Department"
+            },
+            "departmentName": "Department Name",
+            "location": "Location",
+            "employee": "Employee"
+        }
+    }
+}

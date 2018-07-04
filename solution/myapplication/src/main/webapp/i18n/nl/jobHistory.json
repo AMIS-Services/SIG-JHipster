@@ -1,0 +1,27 @@
+
+{
+    "myapplicationApp": {
+        "jobHistory" : {
+            "home": {
+                "title": "Job Histories",
+                "createLabel": "Maak een nieuwe Job History",
+                "createOrEditLabel": "Maak of wijzig een Job History"
+            },
+            "created": "A new Job History is created with identifier {{ param }}",
+            "updated": "A Job History is updated with identifier {{ param }}",
+            "deleted": "A Job History is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Job History {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Job History"
+            },
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "language": "Language",
+            "job": "Job",
+            "department": "Department",
+            "employee": "Employee"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+{
+    "myapplicationApp": {
+        "task" : {
+            "home": {
+                "title": "Tasks",
+                "createLabel": "Maak een nieuwe Task",
+                "createOrEditLabel": "Maak of wijzig een Task"
+            },
+            "created": "A new Task is created with identifier {{ param }}",
+            "updated": "A Task is updated with identifier {{ param }}",
+            "deleted": "A Task is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Task {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Task"
+            },
+            "title": "Title",
+            "description": "Description",
+            "job": "Job"
+        }
+    }
+}

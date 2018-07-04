@@ -1,0 +1,63 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="employee">
+            <h2><span jhiTranslate="myapplicationApp.employee.detail.title">Employee</span> {{employee.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myapplicationApp.employee.firstName" [ngbTooltip]="'myapplicationApp.employee.help.firstName' | translate">First Name</span></dt>
+                <dd>
+                    <span>{{employee.firstName}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.lastName">Last Name</span></dt>
+                <dd>
+                    <span>{{employee.lastName}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.email">Email</span></dt>
+                <dd>
+                    <span>{{employee.email}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.phoneNumber">Phone Number</span></dt>
+                <dd>
+                    <span>{{employee.phoneNumber}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.hireDate">Hire Date</span></dt>
+                <dd>
+                    <span>{{employee.hireDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.salary">Salary</span></dt>
+                <dd>
+                    <span>{{employee.salary}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.commissionPct">Commission Pct</span></dt>
+                <dd>
+                    <span>{{employee.commissionPct}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.department">Department</span></dt>
+                <dd>
+                    <div *ngIf="employee.departmentId">
+                        <a [routerLink]="['/department-my-suffix', employee.departmentId, 'view']">{{employee.departmentId}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.employee.manager">Manager</span></dt>
+                <dd>
+                    <div *ngIf="employee.managerId">
+                        <a [routerLink]="['/employee-my-suffix', employee.managerId, 'view']">{{employee.managerId}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/employee-my-suffix', employee.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

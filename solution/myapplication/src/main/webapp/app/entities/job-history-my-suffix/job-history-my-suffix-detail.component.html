@@ -1,0 +1,53 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="jobHistory">
+            <h2><span jhiTranslate="myapplicationApp.jobHistory.detail.title">Job History</span> {{jobHistory.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="myapplicationApp.jobHistory.startDate">Start Date</span></dt>
+                <dd>
+                    <span>{{jobHistory.startDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.jobHistory.endDate">End Date</span></dt>
+                <dd>
+                    <span>{{jobHistory.endDate}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.jobHistory.language">Language</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'myapplicationApp.Language.' + jobHistory.language}}">{{jobHistory.language}}</span>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.jobHistory.job">Job</span></dt>
+                <dd>
+                    <div *ngIf="jobHistory.jobId">
+                        <a [routerLink]="['/job-my-suffix', jobHistory.jobId, 'view']">{{jobHistory.jobId}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.jobHistory.department">Department</span></dt>
+                <dd>
+                    <div *ngIf="jobHistory.departmentId">
+                        <a [routerLink]="['/department-my-suffix', jobHistory.departmentId, 'view']">{{jobHistory.departmentId}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="myapplicationApp.jobHistory.employee">Employee</span></dt>
+                <dd>
+                    <div *ngIf="jobHistory.employeeId">
+                        <a [routerLink]="['/employee-my-suffix', jobHistory.employeeId, 'view']">{{jobHistory.employeeId}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/job-history-my-suffix', jobHistory.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

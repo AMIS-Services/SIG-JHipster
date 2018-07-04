@@ -1,0 +1,22 @@
+
+{
+    "myapplicationApp": {
+        "region" : {
+            "home": {
+                "title": "Regions",
+                "createLabel": "Maak een nieuwe Region",
+                "createOrEditLabel": "Maak of wijzig een Region"
+            },
+            "created": "A new Region is created with identifier {{ param }}",
+            "updated": "A Region is updated with identifier {{ param }}",
+            "deleted": "A Region is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Region {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Region"
+            },
+            "regionName": "Region Name"
+        }
+    }
+}

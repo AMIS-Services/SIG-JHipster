@@ -1,0 +1,26 @@
+
+{
+    "myapplicationApp": {
+        "job" : {
+            "home": {
+                "title": "Jobs",
+                "createLabel": "Maak een nieuwe Job",
+                "createOrEditLabel": "Maak of wijzig een Job"
+            },
+            "created": "A new Job is created with identifier {{ param }}",
+            "updated": "A Job is updated with identifier {{ param }}",
+            "deleted": "A Job is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Job {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Job"
+            },
+            "jobTitle": "Job Title",
+            "minSalary": "Min Salary",
+            "maxSalary": "Max Salary",
+            "employee": "Employee",
+            "task": "Task"
+        }
+    }
+}

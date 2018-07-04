@@ -1,0 +1,23 @@
+
+{
+    "myapplicationApp": {
+        "country" : {
+            "home": {
+                "title": "Countries",
+                "createLabel": "Maak een nieuwe Country",
+                "createOrEditLabel": "Maak of wijzig een Country"
+            },
+            "created": "A new Country is created with identifier {{ param }}",
+            "updated": "A Country is updated with identifier {{ param }}",
+            "deleted": "A Country is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Country {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Country"
+            },
+            "countryName": "Country Name",
+            "region": "Region"
+        }
+    }
+}
